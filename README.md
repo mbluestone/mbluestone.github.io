@@ -1,3 +1,3 @@
 # mbluestone.github.io
 
-- [Casablanca](https://mbluestone.github.io/CasablancaInLab.html)
+- [Casablanca](https://mbluestone.github.io/jspsych/CasablancaInLab.html)
