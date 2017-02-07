@@ -19,17 +19,24 @@
       var pair = vars[i].split("=");
       if (pair[0] == variable){return pair[1];}
     }
-    alert('Query variable' + variable + ' not found');
+    alert('Query variable ' + variable + ' not found');
   }
 
   var test_var = {
     type: 'text',
-    text: getQueryVariable("id")
-  }
+    text: function() {
+      var subject_id = getQueryVariable("id")
+      return "<p>Your subject id is "+ subject_id +". "
+    }
+  };
+
+  /* create experiment timeline array */
+  var timeline = [];
+  timeline.push(test_var);
 
   jsPsych.init({
-    timeline: [test_var]
-  })
+    timeline: timeline
+  });
 
   </script>
 </html>
